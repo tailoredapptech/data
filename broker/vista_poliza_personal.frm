@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `pp`.`idpoliza_personal` AS `idpoliza_personal`,`pp`.`numero` AS `numero`,`pp`.`compania_seguros` AS `compania_seguros`,`r`.`ramo` AS `ramo`,`cp`.`nombre` AS `nombre`,`cp`.`apellido` AS `apellido`,`cp`.`cedula` AS `cedula`,`pp`.`fecha_solicitud` AS `fecha_solicitud`,`pp`.`fecha_inicio` AS `fecha_inicio`,`pp`.`fecha_termino` AS `fecha_termino`,`pp`.`estado` AS `estado`,`pp`.`responsable` AS `responsable` from `broker`.`poliza_personal` `pp` join `broker`.`compania_seguros` `c` join `broker`.`ramo` `r` join `broker`.`cliente_persona` `cp`
+md5=2d43a27b197b44e81027f0c42f86771f
+updatable=1
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=2
+with_check_option=0
+timestamp=2015-09-16 21:35:15
+create-version=1
+source=SELECT \n    pp.idpoliza_personal,\n    pp.numero,\n    pp.compania_seguros,\n    r.ramo,\n    cp.nombre,\n    cp.apellido,\n    cp.cedula,\n    pp.fecha_solicitud,\n    pp.fecha_inicio,\n    pp.fecha_termino,\n    pp.estado,\n    pp.responsable\nFROM\n    poliza_personal pp,\n    compania_seguros c,\n    ramo r,\n    cliente_persona cp
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `pp`.`idpoliza_personal` AS `idpoliza_personal`,`pp`.`numero` AS `numero`,`pp`.`compania_seguros` AS `compania_seguros`,`r`.`ramo` AS `ramo`,`cp`.`nombre` AS `nombre`,`cp`.`apellido` AS `apellido`,`cp`.`cedula` AS `cedula`,`pp`.`fecha_solicitud` AS `fecha_solicitud`,`pp`.`fecha_inicio` AS `fecha_inicio`,`pp`.`fecha_termino` AS `fecha_termino`,`pp`.`estado` AS `estado`,`pp`.`responsable` AS `responsable` from `broker`.`poliza_personal` `pp` join `broker`.`compania_seguros` `c` join `broker`.`ramo` `r` join `broker`.`cliente_persona` `cp`
