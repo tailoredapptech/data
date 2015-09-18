@@ -7,7 +7,7 @@ definer_user=root
 definer_host=localhost
 suid=2
 with_check_option=0
-timestamp=2015-09-17 20:26:08
+timestamp=2015-09-18 14:21:48
 create-version=1
 source=SELECT \n        c.razon_social, r.ramo\n    FROM\n        ramo r,\n        compania_seguros_ramo cr,\n        compania_seguros c\n    WHERE\n        cr.compania_seguros = c.idcompania_seguros\n            AND r.idramo = cr.ramo
 client_cs_name=utf8
