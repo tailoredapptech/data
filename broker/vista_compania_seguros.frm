@@ -7,7 +7,7 @@ definer_user=root
 definer_host=localhost
 suid=2
 with_check_option=0
-timestamp=2015-09-14 16:39:53
+timestamp=2015-09-18 14:21:48
 create-version=1
 source=select c.idcompania_seguros, c.ruc, c.nombre_comercial, c.razon_social, c.direccion, c.telefono, e.estado from compania_seguros c, estado e where c.estado=e.idestado
 client_cs_name=utf8

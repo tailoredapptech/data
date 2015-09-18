@@ -7,7 +7,7 @@ definer_user=root
 definer_host=localhost
 suid=2
 with_check_option=0
-timestamp=2015-09-10 17:38:08
+timestamp=2015-09-18 14:21:47
 create-version=1
 source=select cp.idcliente_persona, cp.cedula, cp.nombre, cp.apellido, cp.direccion, cp.telefono_fijo, cp.telefono_movil, cp.email, e.estado from cliente_persona cp, estado e where  cp.estado=e.idestado
 client_cs_name=utf8

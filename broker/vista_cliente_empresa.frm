@@ -7,7 +7,7 @@ definer_user=root
 definer_host=localhost
 suid=2
 with_check_option=0
-timestamp=2015-09-10 17:38:08
+timestamp=2015-09-18 14:21:47
 create-version=1
 source=select ce.idcliente_empresa, ce.ruc, ce.nombre, ce.razon_social, ce.direccion, ce.telefono, ce.email, e.estado, ce.nombre_contacto, ce.direccion_contacto, ce.telefono_fijo, ce.telefono_movil, ce.email_contacto  from cliente_empresa ce, estado e where  ce.estado=e.idestado
 client_cs_name=utf8

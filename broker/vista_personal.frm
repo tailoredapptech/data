@@ -7,7 +7,7 @@ definer_user=root
 definer_host=localhost
 suid=2
 with_check_option=0
-timestamp=2015-09-10 17:38:08
+timestamp=2015-09-18 14:21:47
 create-version=1
 source=SELECT \n        p.idpersonal,\n        p.nombre,\n		p.apellido,\n        p.cedula,\n        p.email,\n        p.telefono,\n        p.direccion,\n        c.cargo,\n        p.usuario,\n        p.clave,\n        e.estado,\n        p.alias_empresa,\n        p.tipo_cuenta,\n        p.nom_banco,\n        p.num_cuenta,\n        p.tipo_sangre,\n        p.nom_contacto,\n        p.parentezco,\n		p.telf_contacto\n    FROM\n        personal p,\n        cargo c,\n        estado e\n    WHERE\n        c.idcargo = p.cargo\n            AND e.idestado = p.estado
 client_cs_name=utf8
